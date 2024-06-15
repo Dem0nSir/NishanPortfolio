@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="">
+      <form action="https://formspree.io/f/xeqyyvjj" method="POST">
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
@@ -23,7 +23,7 @@ function Contact() {
           </label>
           <input
             type="text"
-            name="email"
+            name="_replyto"
             id="email"
             placeholder="Email"
             required
@@ -39,7 +39,7 @@ function Contact() {
             placeholder="Message"
             required></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value="Send" />
       </form>
     </section>
   );
